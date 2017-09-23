@@ -31,6 +31,7 @@ sudo n stable
 ```
 npm install -g create-react-app
 create-react-app workshop-react
+yarn add jest-enzyme
 
 cd workshop-react
 ```

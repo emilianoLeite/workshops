@@ -31,9 +31,10 @@ sudo n stable
 ```
 npm install -g create-react-app
 create-react-app workshop-react
-yarn add jest-enzyme
 
 cd workshop-react
+
+yarn add enzyme react-test-renderer
 ```
 
 Para maiores informações sobre como o projeto foi criado e como executar a aplicação, acesse o [repositório do Create React App](https://github.com/facebookincubator/create-react-app).

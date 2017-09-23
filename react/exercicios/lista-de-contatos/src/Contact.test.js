@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Contact from './Contact';
 
 it('renders without crashing', () => {
@@ -8,10 +9,10 @@ it('renders without crashing', () => {
 });
 
 it('renders the props correctly', () => {
-  const div = document.createElement('div');
   let name = 'Nome';
   let telephone = '(11) 1234-5678';
-  const expected_output = <span> {name}; {telephone}</span>;
-  let component = ReactDOM.render(<Contact />, div);
-  expect(component).toContainReact(expected_output);
+  let component = shallow(<Contact name={name} telephone={telephone} />)
+  expect(component.contains(name)).toEqual(true);
+  expect(component.contains(`; `)).toEqual(true);
+  expect(component.contains(telephone)).toEqual(true);
 });

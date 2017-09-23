@@ -12,6 +12,7 @@ Supondo que você receba um JSON com um Array de contatos, o objetivo é consegu
 **Conceitos envolvidos**
 - [Componentes e Props](https://facebook.github.io/react/docs/components-and-props.html)
 - [Combinando javascript com HTML (JSX)](https://facebook.github.io/react/docs/introducing-jsx.html)
+- [Listas e Chaves](https://facebook.github.io/react/docs/lists-and-keys.html)
 
 **Dicas**
 - Pense em composição: Uma representação de Lista e uma representação individual do contato.
